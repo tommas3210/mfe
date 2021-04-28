@@ -2,13 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
     "paths": {
-      "components-lib": [
-        "dist/components-lib/components-lib",
-        "dist/components-lib"
-      ]
+      "@angular/*": [
+        "./node_modules/@angular/*"
+      ],
     },
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

@@ -4,4 +4,4 @@
 npx ng new shared-angular-components --create-application=false
 
 ### Within shared-components
-npx ng generate library my-lib
+npx ng generate library components-lib
