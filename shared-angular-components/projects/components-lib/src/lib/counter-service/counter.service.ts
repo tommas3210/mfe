@@ -1,7 +1,22 @@
 import { Injectable } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+@NgModule({
+  declarations: [
+  ],
+  imports: [
+    CommonModule
+  ],
+  exports: [
+  ]
+})
+export class ServicesModule { }
 
+// @Injectable({
+//   providedIn: 'root',
+// })
 @Injectable({
-  providedIn: 'root',
+  providedIn: ServicesModule
 })
 export class CounterService {
   private counterValue = 100;

@@ -7,5 +7,8 @@ import('./bootstrap')
 	//    loadRemoteEntry('http://localhost:4201/remoteEntry.js', 'mfe1')
 	// ])
 	// .catch(err => console.error('Error loading remote entries', err))
-	// .then(() => import('./bootstrap'))
+	// .then(() => {
+	// 	console.log('about to import');
+	// 	import('./bootstrap');
+	// })
 	// .catch(err => console.error(err));

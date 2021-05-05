@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'container-module-federation';
+  toggleValue = false;
+
+  toggle() {
+    this.toggleValue = !this.toggleValue;
+  }
 }

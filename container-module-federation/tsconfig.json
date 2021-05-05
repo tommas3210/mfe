@@ -24,9 +24,6 @@
     "paths": {
       "components-lib": [
         "./node_modules/components-lib"
-      ],
-      "components-lib/*": [
-        "./node_modules/components-lib/*"
       ]
     }
   },

@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
+import { ServicesModule } from 'components-lib';
+
 import { PluginProxyComponent } from './plugins/plugin-proxy.component';
 
 @NgModule({
@@ -15,7 +17,8 @@ import { PluginProxyComponent } from './plugins/plugin-proxy.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ServicesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

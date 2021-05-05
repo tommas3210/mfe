@@ -5,7 +5,8 @@ const path = require("path");
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
   path.join(__dirname, 'tsconfig.json'),
-  ['components-lib']);
+  // ['components-lib']);
+  []);
 
 module.exports = {
   output: {
@@ -26,7 +27,9 @@ module.exports = {
           "@angular/core": { singleton: true, strictVersion: true },
           "@angular/common": { singleton: true, strictVersion: true },
           "@angular/router": { singleton: true, strictVersion: true },
-          ...sharedMappings.getDescriptors()
+          // "components-lib": { singleton: true, eager: true, strictVersion: true, import: "/Users/scott/cxone/cxone-suite/app1-angular12/node_modules/components-lib"}
+          "components-lib": { singleton: true, strictVersion: true, requiredVersion: false}
+          // ...sharedMappings.getDescriptors()
         }
 
         // shared: {
