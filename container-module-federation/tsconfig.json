@@ -20,7 +20,15 @@
       "es2018",
       "dom"
     ],
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "paths": {
+      "components-lib": [
+        "./node_modules/components-lib"
+      ],
+      "components-lib/*": [
+        "./node_modules/components-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

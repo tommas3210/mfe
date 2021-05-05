@@ -5,7 +5,10 @@ const path = require("path");
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
   path.join(__dirname, 'tsconfig.json'),
-  [/* mapped paths to share */]);
+  ['components-lib']);
+
+
+  console.log('AAAA', sharedMappings.getDescriptors());
 
 module.exports = {
   output: {

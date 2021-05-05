@@ -19,7 +19,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "components-lib": [
+        "./node_modules/components-lib"
+      ],
+      "components-lib/*": [
+        "./node_modules/components-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

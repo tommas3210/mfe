@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { CounterService } from 'components-lib';
 
 @Component({
   selector: 'app-hello2',
@@ -6,5 +7,5 @@ import {Component} from '@angular/core';
 })
 export class Hello2Component {
 
-  constructor() { }
+  constructor(private counterService: CounterService) {}
 }

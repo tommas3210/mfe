@@ -6,7 +6,7 @@ const path = require("path");
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
   path.join(__dirname, 'tsconfig.json'),
-  ['shared-lib']);
+  ['components-lib']);
 
 module.exports = {
   output: {

@@ -10,7 +10,8 @@ export class CounterService {
     return this.counterValue;
   }
 
-  constructor() {}
+  constructor() {
+  }
 
   public incremet(incrementAmount: number): void {
     this.counterValue = this.counterValue + incrementAmount;
