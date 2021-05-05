@@ -8,6 +8,8 @@ import { HelloModule } from './hello/hello.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
+import { HeaderModule } from 'components-lib';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HelloModule
+    HelloModule,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

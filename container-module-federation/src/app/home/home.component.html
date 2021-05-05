@@ -1,5 +1,10 @@
 <h1>Container App</h1>
 
+<p>
+Counter Service Value: {{ counterService.counter}}
+<button (click)="incrementCounter()">increment counter</button>
+</p>
+
 <ng-container *ngFor="let p of components">
     <plugin-proxy [options]="p"></plugin-proxy>
 </ng-container>
