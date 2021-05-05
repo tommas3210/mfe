@@ -1,5 +1,6 @@
+console.log('main.ts fired');
 import('./bootstrap')
-	.catch(err => console.error(err));
+	.catch(err => console.error('OOPS', err));
 
 	// import { loadRemoteEntry } from '@angular-architects/module-federation';
 	// Promise.all([

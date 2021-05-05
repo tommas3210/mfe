@@ -7,11 +7,6 @@ sharedMappings.register(
   path.join(__dirname, 'tsconfig.json'),
   ['components-lib']);
 
-
-  const myMappings = sharedMappings.getDescriptors();
-  // myMappings['components-lib'].eager = true;
-  console.log('AAAA',myMappings);
-
 module.exports = {
   output: {
     uniqueName: "container-module-federation"
@@ -31,7 +26,7 @@ module.exports = {
           "@angular/core": { singleton: true, strictVersion: true },
           "@angular/common": { singleton: true, strictVersion: true },
           "@angular/router": { singleton: true, strictVersion: true },
-          ...myMappings
+          ...sharedMappings.getDescriptors()
         }
 
         // shared: {
