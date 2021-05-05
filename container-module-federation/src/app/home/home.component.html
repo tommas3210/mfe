@@ -1,2 +1,9 @@
 <h1>Container App</h1>
 
+<ng-container *ngFor="let p of components">
+    <plugin-proxy [options]="p"></plugin-proxy>
+</ng-container>
+
+<button (click)="addComponent()">Dynamically Add Component</button>
+ <plugin-proxy [options]="options"></plugin-proxy>
+

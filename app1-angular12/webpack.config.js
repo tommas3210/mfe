@@ -6,7 +6,7 @@ const path = require("path");
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
   path.join(__dirname, 'tsconfig.json'),
-  [/* mapped paths to share */]);
+  ['shared-lib']);
 
 module.exports = {
   output: {
@@ -23,6 +23,7 @@ module.exports = {
         filename: "remoteEntry.js",
         exposes: {
             './HelloModule': './src/app/hello/hello.module.ts',
+            './Component': './src/app/hello//hello1/hello1.component.ts',
         },
 
         shared: {
