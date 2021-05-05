@@ -7,6 +7,7 @@ const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
   path.join(__dirname, 'tsconfig.json'),
   ['components-lib']);
+  // );
 
 module.exports = {
   output: {

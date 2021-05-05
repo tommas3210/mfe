@@ -8,7 +8,9 @@ sharedMappings.register(
   ['components-lib']);
 
 
-  console.log('AAAA', sharedMappings.getDescriptors());
+  const myMappings = sharedMappings.getDescriptors();
+  // myMappings['components-lib'].eager = true;
+  console.log('AAAA',myMappings);
 
 module.exports = {
   output: {
@@ -29,7 +31,7 @@ module.exports = {
           "@angular/core": { singleton: true, strictVersion: true },
           "@angular/common": { singleton: true, strictVersion: true },
           "@angular/router": { singleton: true, strictVersion: true },
-          ...sharedMappings.getDescriptors()
+          ...myMappings
         }
 
         // shared: {
