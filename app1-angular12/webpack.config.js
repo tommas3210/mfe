@@ -23,13 +23,13 @@ module.exports = {
         filename: "remoteEntry.js",
         exposes: {
             './HelloModule': './src/app/hello/hello.module.ts',
-            './Component': './src/app/hello//hello1/hello1.component.ts',
+            // './Component': './src/app/hello//hello1/hello1.component.ts',
         },
 
         shared: {
-          "@angular/core": { singleton: true, strictVersion: true },
-          "@angular/common": { singleton: true, strictVersion: true },
-          "@angular/router": { singleton: true, strictVersion: true },
+          // "@angular/core": { singleton: true, strictVersion: true },
+          // "@angular/common": { singleton: true, strictVersion: true },
+          // "@angular/router": { singleton: true, strictVersion: true },
           // "components-lib": { singleton: true, eager: true, requiredVersion: false, import: "/Users/scott/cxone/cxone-suite/app1-angular12/node_modules/components-lib"}
           "components-lib": { singleton: true, strictVersion: true, requiredVersion: false }
           // ...sharedMappings.getDescriptors()

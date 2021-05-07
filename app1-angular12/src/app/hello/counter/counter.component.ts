@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CounterService, EventBusService } from 'components-lib';
+// import { of } from 'rxjs';
+import { format, formatDistance, formatRelative, subDays } from 'date-fns'
 
 @Component({
   selector: 'app-counter',
@@ -15,6 +17,9 @@ export class CounterComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    // const sub$ = of('100');
+    // sub$.subscribe(val => console.log(val));
+    console.log(format(new Date(), "'Today is a' eeee"));
   }
 
   sendEvent() {
