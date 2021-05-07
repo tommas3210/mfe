@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CounterService } from 'components-lib';
+import { CounterService, EventBusService } from 'components-lib';
 
 @Component({
   selector: 'app-counter',
@@ -8,13 +8,17 @@ import { CounterService } from 'components-lib';
 })
 export class CounterComponent implements OnInit {
 
-  constructor(private counterService: CounterService) {}
+  constructor(private counterService: CounterService, private eventBusService: EventBusService) {}
 
   incrementCounter() {
     this.counterService.incremet(100);
   }
 
   ngOnInit(): void {
+  }
+
+  sendEvent() {
+    this.eventBusService.emitEvent('notification', 'Howdy Partner');
   }
 
 }

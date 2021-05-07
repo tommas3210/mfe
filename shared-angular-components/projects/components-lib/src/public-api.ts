@@ -11,4 +11,5 @@ export * from './lib/sidebar/sidebar.component';
 export * from './lib/button/button.module';
 export * from './lib/button/button.component';
 
-export * from './lib/counter-service/counter.service';
+export * from './lib/services/counter.service';
+export * from './lib/services/eventbus.service';

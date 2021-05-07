@@ -7,13 +7,13 @@ import { CounterService } from 'components-lib';
   encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
-  options = {
-    remoteEntry: 'http://localhost:4201/remoteEntry.js',
-    remoteName: 'mfe1',
-    exposedModule: './Component',
-    displayName: 'Pricing Trends',
-    componentName: 'Hello1Component',
-  };
+  // options = {
+  //   remoteEntry: 'http://localhost:4201/remoteEntry.js',
+  //   remoteName: 'mfe1',
+  //   exposedModule: './Component',
+  //   displayName: 'Pricing Trends',
+  //   componentName: 'Hello1Component',
+  // };
 
   components: any[] = [];
 
@@ -21,11 +21,21 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {}
 
+  // addComponent() {
+  //   this.components.push({
+  //     remoteEntry: 'http://localhost:4201/remoteEntry.js',
+  //     remoteName: 'mfe1',
+  //     exposedModule: './Component',
+  //     displayName: 'Pricing Trends',
+  //     componentName: 'Hello1Component',
+  //   });
+  // }
+
   addComponent() {
     this.components.push({
       remoteEntry: 'http://localhost:4201/remoteEntry.js',
       remoteName: 'mfe1',
-      exposedModule: './Component',
+      exposedModule: './HelloModule',
       displayName: 'Pricing Trends',
       componentName: 'Hello1Component',
     });

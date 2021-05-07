@@ -8,8 +8,6 @@ import { HelloModule } from './hello/hello.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
-import { ServicesModule } from 'components-lib';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,8 +16,7 @@ import { ServicesModule } from 'components-lib';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HelloModule,
-    ServicesModule
+    HelloModule
   ],
   providers: [],
   bootstrap: [AppComponent]

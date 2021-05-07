@@ -22,6 +22,7 @@
     "@tailwindcss/forms": "^0.3.2",
     "@tailwindcss/typography": "^0.4.0",
     "components-lib": "file:../shared-angular-components/dist/components-lib/",
+    "eev": "^0.1.5",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
